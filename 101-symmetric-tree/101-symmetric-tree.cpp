@@ -9,14 +9,15 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-/*class Solution {
+class Solution {
 public:
     
     bool isSymmetricCheck(TreeNode *left, TreeNode *right){
-        if(!left || ! right)
-            return false;
+        
         if(!left && !right)
             return true;
+             if(!left || ! right)
+            return false;
         return left->val == right->val && isSymmetricCheck(left->left, right->right) && isSymmetricCheck(left->right, right->left);
         
     }
@@ -27,8 +28,8 @@ public:
         return isSymmetricCheck(root->left, root->right);
             
     }
-};*/
-class Solution {
+};
+/*class Solution {
 public:
     bool  areMirrorImage(TreeNode*r1,TreeNode*r2)
     {
@@ -42,4 +43,4 @@ public:
               return true;
           return areMirrorImage(root->left,root->right);
     }
-};
+};*/
