@@ -1,5 +1,6 @@
 /*class Solution {
 public:
+//this logic mainly work on only positive numbers.
     bool checkStraightLine(vector<vector<int>>& coordinates) {
         int size=coordinates.size();
         int x=abs(coordinates[1][0]-coordinates[0][0]);
@@ -28,7 +29,7 @@ public:
 		for(int i = 2; i < coordinates.size(); i++){
 			int x3 = coordinates[i][0];
 			int y3 = coordinates[i][1];
-			// If area of triangle formed by three points is not zero then points are not collinear
+			
 			if(y1*(x3 - x2) + y2*(x1 - x3) + y3*(x2 - x1) != 0){   
 				return false;
 			}
