@@ -1,4 +1,4 @@
-/*class Solution {
+class Solution {
 public:
     bool isIsomorphic(string s, string t) {
       int m=s.size();
@@ -15,7 +15,7 @@ public:
         }
         return true;
     }
-};*/
+};
 
 
 
@@ -23,7 +23,7 @@ public:
 
 
 
-class Solution {
+/*class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         unordered_map<char, int> mp1;
@@ -39,4 +39,4 @@ public:
         
         return true;
     }
-};
+};*/
