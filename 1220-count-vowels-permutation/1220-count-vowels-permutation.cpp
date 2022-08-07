@@ -2,7 +2,7 @@ class Solution {
 public:
     int countVowelPermutation(int n) {
         long a=1 ,e=1, i=1, o=1, u=1;
-        long mod= pow(10,9)+7;
+        long mod= 1e9+7;
         for(int j=2;j<=n;j++){
             long a2=(e +i+ u)% mod;
             long e2=(a+i)%mod;
