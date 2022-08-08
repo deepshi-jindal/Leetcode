@@ -20,7 +20,22 @@ public:
     }
 };*/
 
+
 class Solution {
+public:
+    int lengthOfLIS(vector<int>& A)
+    {
+        int len = 0;
+        for(auto cur : A) 
+            if(len == 0 || A[len-1] < cur) 
+                A[len++] = cur;       
+            else 
+                *lower_bound(begin(A), begin(A) + len, cur) = cur;
+        return len;
+    }
+};
+
+/*class Solution {
 public:
     //RECURSION + MEMOIZATION
     int find(int ind , int prev ,vector<int>& arr,vector<vector<int>> &dp){
@@ -41,5 +56,5 @@ public:
         vector<vector<int>> dp(n+1,vector<int>(n+1,-1));
         return find(0,-1,nums,dp);
 		}
-};
+};*/
     
