@@ -13,7 +13,6 @@ class Solution {
 public:
     unordered_map<TreeNode* , int> map;
     int rob(TreeNode* root) {
-        //   unordered_map<TreeNode* , int> map;
         if(root==NULL)
             return 0;
         if(map.count(root))
