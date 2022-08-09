@@ -28,7 +28,7 @@ public:
         return ans;
     }
         void PO(Node *root, vector<int> &ans){
-           // ans.push_back(root->val);
+        
             for(int i=0;i<root->children.size();i++){
                 PO(root->children[i], ans);
             }
