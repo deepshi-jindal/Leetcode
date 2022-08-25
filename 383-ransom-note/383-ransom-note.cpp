@@ -7,7 +7,8 @@ public:
         for(auto c:ransomNote)
             map[c]--;
         for(auto c: ransomNote)
-            if(map[c]<0) return false;
+            if(map[c]<0) 
+                return false;
         
         return true;
         
