@@ -9,3 +9,5 @@ and year(order_date)='2019'
 group by u.user_id
 
 
+
+
