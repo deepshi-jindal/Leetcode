@@ -33,11 +33,11 @@ class Solution{
         reverse(ans.begin(),ans.end());
         return ans;*/
         vector<int> v;
-int max_so_far=INT_MIN;
+int maxi=INT_MIN;
 for(int i=n-1;i>=0;i--)
 {
-    if(A[i] >= max_so_far) v.push_back(A[i]);
-    max_so_far = max(max_so_far,A[i]);
+    if(A[i] >= maxi) v.push_back(A[i]);
+    maxi = max(maxi,A[i]);
 }
 reverse(v.begin(),v.end());
 return v;
