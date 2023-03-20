@@ -16,6 +16,7 @@ public:
             min+=cnt;
                 
         }
+            
         return min;
     }
 };
