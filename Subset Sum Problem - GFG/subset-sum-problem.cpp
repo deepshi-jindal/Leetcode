@@ -12,7 +12,8 @@ public:
     bool isSubsetSum(vector<int>arr, int sum){
         // code here 
         int N=arr.size();
-         vector<vector<bool>> dp(N+1,vector<bool> (sum+1));
+       //  vector<vector<bool>> dp(N+1,vector<bool> (sum+1));
+       bool dp[N+1][sum+1];
        for(int i=0;i<=N;i++)
        {
            for(int j=0;j<=sum;j++)
