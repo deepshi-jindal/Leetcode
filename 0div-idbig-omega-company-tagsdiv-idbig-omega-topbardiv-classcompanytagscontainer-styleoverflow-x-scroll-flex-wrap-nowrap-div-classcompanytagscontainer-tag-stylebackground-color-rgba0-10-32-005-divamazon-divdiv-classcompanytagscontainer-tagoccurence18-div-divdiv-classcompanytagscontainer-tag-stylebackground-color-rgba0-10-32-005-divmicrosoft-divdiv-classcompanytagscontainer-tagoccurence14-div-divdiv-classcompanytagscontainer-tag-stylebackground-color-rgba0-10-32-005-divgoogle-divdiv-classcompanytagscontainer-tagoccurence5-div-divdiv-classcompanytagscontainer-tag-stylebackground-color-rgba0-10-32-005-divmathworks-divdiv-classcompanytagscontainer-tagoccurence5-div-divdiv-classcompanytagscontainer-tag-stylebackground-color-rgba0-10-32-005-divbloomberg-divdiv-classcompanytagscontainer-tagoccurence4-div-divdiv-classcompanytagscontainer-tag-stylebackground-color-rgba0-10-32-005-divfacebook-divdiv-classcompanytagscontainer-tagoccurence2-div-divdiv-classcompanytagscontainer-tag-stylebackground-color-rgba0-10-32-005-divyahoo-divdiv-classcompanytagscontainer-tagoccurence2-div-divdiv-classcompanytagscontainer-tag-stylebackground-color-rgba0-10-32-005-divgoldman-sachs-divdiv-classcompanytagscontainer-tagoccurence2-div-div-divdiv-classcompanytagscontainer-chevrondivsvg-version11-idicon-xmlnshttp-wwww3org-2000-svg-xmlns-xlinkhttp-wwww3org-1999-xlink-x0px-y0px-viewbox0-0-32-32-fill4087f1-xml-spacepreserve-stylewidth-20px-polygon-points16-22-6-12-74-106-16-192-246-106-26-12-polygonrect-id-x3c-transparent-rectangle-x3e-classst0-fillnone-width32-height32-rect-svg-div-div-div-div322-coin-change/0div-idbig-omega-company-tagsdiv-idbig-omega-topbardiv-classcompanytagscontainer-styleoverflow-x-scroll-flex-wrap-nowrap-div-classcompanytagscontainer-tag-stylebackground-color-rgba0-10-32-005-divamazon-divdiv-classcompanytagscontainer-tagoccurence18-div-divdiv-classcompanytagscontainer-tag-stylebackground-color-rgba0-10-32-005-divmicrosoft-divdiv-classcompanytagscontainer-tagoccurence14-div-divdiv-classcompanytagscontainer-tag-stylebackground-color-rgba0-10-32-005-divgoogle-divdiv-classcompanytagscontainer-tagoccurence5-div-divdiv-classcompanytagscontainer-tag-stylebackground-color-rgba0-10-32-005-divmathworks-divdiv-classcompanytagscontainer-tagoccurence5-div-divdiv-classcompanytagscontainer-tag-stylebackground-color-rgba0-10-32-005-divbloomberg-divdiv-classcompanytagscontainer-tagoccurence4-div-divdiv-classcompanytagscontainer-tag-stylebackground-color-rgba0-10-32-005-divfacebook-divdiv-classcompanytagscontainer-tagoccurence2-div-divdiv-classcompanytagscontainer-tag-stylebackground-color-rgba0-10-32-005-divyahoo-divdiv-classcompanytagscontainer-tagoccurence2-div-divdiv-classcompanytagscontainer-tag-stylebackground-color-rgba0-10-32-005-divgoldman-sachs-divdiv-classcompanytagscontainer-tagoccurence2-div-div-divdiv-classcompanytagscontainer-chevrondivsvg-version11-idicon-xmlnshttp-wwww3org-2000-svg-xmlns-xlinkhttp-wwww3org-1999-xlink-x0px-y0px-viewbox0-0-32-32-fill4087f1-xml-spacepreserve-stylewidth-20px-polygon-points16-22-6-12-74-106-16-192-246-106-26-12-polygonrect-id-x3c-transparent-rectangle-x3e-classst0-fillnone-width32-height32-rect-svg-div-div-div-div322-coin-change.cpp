@@ -10,7 +10,7 @@ public:
                     dp[i][j] = (j == 0) ? 0 : INT_MAX - 1;
         
             }
-        }
+   }
         for(int i=1;i<=n;i++){
             for(int j=1;j<=amount;j++){
                 if(coins[i-1]<=j){
