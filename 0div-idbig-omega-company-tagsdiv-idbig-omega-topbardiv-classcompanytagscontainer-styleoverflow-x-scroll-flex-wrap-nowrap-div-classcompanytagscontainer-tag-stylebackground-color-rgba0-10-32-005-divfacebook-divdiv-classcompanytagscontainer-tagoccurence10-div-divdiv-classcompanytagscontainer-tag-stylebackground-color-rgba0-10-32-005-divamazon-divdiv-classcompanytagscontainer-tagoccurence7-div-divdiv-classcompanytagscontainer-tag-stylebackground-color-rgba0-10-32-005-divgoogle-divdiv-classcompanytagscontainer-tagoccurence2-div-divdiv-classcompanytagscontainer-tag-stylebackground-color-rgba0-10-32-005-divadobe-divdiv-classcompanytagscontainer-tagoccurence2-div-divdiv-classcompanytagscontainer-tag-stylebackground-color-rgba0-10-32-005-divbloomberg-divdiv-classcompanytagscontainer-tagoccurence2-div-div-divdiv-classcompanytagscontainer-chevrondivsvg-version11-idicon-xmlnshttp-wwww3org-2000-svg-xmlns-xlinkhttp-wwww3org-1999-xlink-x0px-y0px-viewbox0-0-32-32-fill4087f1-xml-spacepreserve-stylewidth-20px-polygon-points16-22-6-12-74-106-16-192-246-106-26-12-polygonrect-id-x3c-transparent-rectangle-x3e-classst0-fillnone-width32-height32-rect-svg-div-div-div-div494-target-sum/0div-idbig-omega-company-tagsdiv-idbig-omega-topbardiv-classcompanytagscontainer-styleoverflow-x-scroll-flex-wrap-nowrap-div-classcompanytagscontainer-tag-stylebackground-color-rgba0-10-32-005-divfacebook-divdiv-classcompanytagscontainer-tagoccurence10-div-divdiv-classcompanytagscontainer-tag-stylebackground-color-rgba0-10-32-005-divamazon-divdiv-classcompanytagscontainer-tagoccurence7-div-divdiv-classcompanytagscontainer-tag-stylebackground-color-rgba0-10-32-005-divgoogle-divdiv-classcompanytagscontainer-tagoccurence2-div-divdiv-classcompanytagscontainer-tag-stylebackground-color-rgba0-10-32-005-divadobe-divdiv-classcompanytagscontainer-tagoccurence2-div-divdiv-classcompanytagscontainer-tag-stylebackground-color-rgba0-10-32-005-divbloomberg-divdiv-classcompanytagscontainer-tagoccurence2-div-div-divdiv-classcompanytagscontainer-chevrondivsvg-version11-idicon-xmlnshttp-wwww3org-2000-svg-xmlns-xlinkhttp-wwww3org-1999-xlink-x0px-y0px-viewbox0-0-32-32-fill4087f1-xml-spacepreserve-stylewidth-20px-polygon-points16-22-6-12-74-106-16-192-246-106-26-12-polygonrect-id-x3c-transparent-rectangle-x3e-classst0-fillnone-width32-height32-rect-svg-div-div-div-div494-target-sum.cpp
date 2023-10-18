@@ -8,7 +8,7 @@ public:
             sum+=nums[i];
         }
         if(sum<abs(target)||(target+sum)%2!=0) return 0;
-        int newtarget=(sum-target)/2;
+        int newtarget=(sum+target)/2;
         return countsubset(nums,newtarget);
     }
     int countsubset(vector<int>&arr,int target){
