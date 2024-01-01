@@ -17,11 +17,12 @@ public:
             }
             else{
                 long long common=mid/lcm;
-                long long c1=(mid/d1)-common,c2=(mid/d2)-common;
+                long long c1=(mid/d1)-common,c2=(mid/d2)-common;//c1=integers which are divisible by only d1
+                //c2 integers that can only be divisible by d2
                 long long z1=cnt1,z2=cnt2;
-                long long avail=mid-(c1+c2+common);
-                z1-=min(z1,c2);
-                z2-=min(z2,c1);
+                long long avail=mid-(c1+c2+common);  //integers that can come in both the arrays
+                z1-=min(z1,c2); //array1 can take c2 integers
+                z2-=min(z2,c1); //array2 can take c1 integers
                 
                 if(z1+z2<=avail){
                     ans=mid;
